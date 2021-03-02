@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ButtonComponent } from './components/shared/button/button.component';
+import { MessageBarComponent } from './components/common/message-bar/message-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonComponent,
+    MessageBarComponent
   ],
   imports: [
     BrowserModule,

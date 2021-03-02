@@ -1,0 +1,13 @@
+.message-view-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    border: 2px solid rebeccapurple;
+    
+    .view-content {
+        font-size: x-large;
+        font-weight: bolder;
+        color: blue;
+    }
+}
