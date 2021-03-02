@@ -6,8 +6,10 @@ import { Subject, Observable } from 'rxjs';
 })
 export class CoreLogicService {
   private messageSubject: Subject<string>;
+  private messageSubjectDictionary: {[id: number]: Subject<string>};
 
   constructor() {
+    this.messageSubjectDictionary = {};
     this.messageSubject = new Subject<string>();
    }
    addMessage(message: string) {
