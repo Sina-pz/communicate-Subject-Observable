@@ -1,16 +1,18 @@
+
 <app-message-bar></app-message-bar>
 
 <div class="message-view-container">
-  <div class="view-content" *ngFor="let message of messages" >
-    {{message}}
+  <div class="view-dictionary-content" >
+    <div class="message-row" *ngFor="let id of messageIds" (click)="onMessageIdClick(id)">
+      <app-message-view [id]="id" ></app-message-view>
+    </div>
+
   </div>
+  <!-- <div class="view-content" *ngFor="let message of messages" >
+    {{message}}
+  </div> -->
 </div>
 
-//TODO: MESSAGE COMPONENT AND MESSAGE-ROW COMPONENT - 
 
 
-populate dictionary in logic
-receive message id from logic
 
-then message-row show each message 
-if we click om each message it is goonaa show it from dictionary located in logic

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/shared/button/button.component';
 import { MessageBarComponent } from './components/common/message-bar/message-bar.component';
+import { MessageViewComponent } from './components/common/message-view/message-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    MessageBarComponent
+    MessageBarComponent,
+    MessageViewComponent
   ],
   imports: [
     BrowserModule,

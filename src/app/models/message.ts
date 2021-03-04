@@ -1,3 +1,3 @@
 export class Msg {
-    constructor(id: number, content: string ) { }
+    constructor(public id: number, public content: string ) { }
 }
